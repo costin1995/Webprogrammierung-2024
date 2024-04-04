@@ -1,0 +1,12 @@
+<h2>Joey does'n share food!!</h2>
+
+<h4>{{my_text}}</h4>
+
+<button (click)="changeText()" mat-stroked-button color="accent">Change text</button>
+<button (click)="showHideList()" mat-stroked-button color="accent">Show/Hide List</button>
+
+<mat-list *ngIf="showList === true" role="list">
+  <mat-list-item role="listitem">Item 1</mat-list-item>
+  <mat-list-item role="listitem">Item 2</mat-list-item>
+  <mat-list-item role="listitem">Item 3</mat-list-item>
+</mat-list>
